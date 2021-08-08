@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;  /*centrer les div au milieu*/
+    text-align: center;
+    /* background: #f2f2f2; */
+}
+.slider{
+    max-width: 1150px;
+    display: flex;
+}
+.slider .card{
+    background-color: white;
+    flex: 1;
+    margin: 0 10px;
+}
+.slider .card .img img{
+    height: 200px;
+    width: 100%;
+    object-fit:cover;
+      /* object-fit: contain; */
+    object-position: top left;
+}
+.slider .card .card-content{
+    padding: 10px 20px;
+}
+.card .card-content .titles{
+    font-size: 25px;
+    font-weight: 600;
+}
+.card .card-content .sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a73e8;
+    line-height: 20px;
+}
+
+.card .card-content p{
+    text-align: justify;
+    margin: 10px 0;
+}
+.card .card-content .btn{
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+}
+.card .card-content .btn button{
+    background: #1a73e8;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #fff;
+}
+.card .card-content .btn button:hover{
+    transform: scale(0.9);
+}
